@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veera | Junior Full-Stack Developer & Designer</title>
+    <meta name="description"
+        content="Portfolio of Veera, a Junior Full-Stack Developer & UI/UX Designer specializing in building high-performance web applications with React, Node.js, and modern cloud architectures.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Ultra-Cinematic Golden Intro Preloader (Splash Screen) -->
+    <div id="preloader" class="preloader">
+        <canvas id="preloader-canvas"></canvas>
+        <div class="preloader-bg-glow"></div>
+
+        <div class="preloader-content">
+            <div class="preloader-logo-wrapper">
+                <div class="logo-gold-glow"></div>
+                <div class="logo-ring-pulse r1"></div>
+                <div class="logo-ring-pulse r2"></div>
+                <div class="logo-shine-beam"></div>
+                <div class="logo-split-container">
+                    <img src="assets/veera_logo.png" alt="VG Logo Left Half" class="preloader-logo-half logo-half-left">
+                    <img src="assets/veera_logo.png" alt="VG Logo Right Half" class="preloader-logo-half logo-half-right">
+                </div>
+            </div>
+
+            <div class="preloader-titles">
+                <h2 class="preloader-name">VEERAPATHIRAN G</h2>
+                <div class="preloader-tagline">
+                    <span>AI/ML ENGINEER</span>
+                    <span class="gold-dot">•</span>
+                    <span>FULL STACK DEVELOPER</span>
+                </div>
+            </div>
+
+            <div class="preloader-progress-box">
+                <div class="preloader-progress-bar">
+                    <div class="preloader-progress-fill" id="preloader-progress"></div>
+                </div>
+                <div class="preloader-status">
+                    <span class="status-text"><i class="fa-solid fa-atom"></i> LOADING EXPERIENCE</span>
+                    <span class="status-percent" id="preloader-percent">0%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="preloader-shutter left-shutter"></div>
+        <div class="preloader-shutter right-shutter"></div>
+    </div>
+
+    <!-- User Uploaded Smoky Background Image -->
+    <div class="smoky-bg-image"></div>
+
+    <!-- Animated Smoke Layers -->
+    <div class="smoky-layer smoke-1"></div>
+    <div class="smoky-layer smoke-2"></div>
+
+    <!-- Dark Vignette Overlay for Crisp Readability -->
+    <div class="smoky-overlay"></div>
+
+    <!-- Interactive Canvas for Drifting Smoke Mist & Glowing Ember Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+
+
+    <!-- Header / Navbar -->
+    <header class="navbar-container">
+        <nav class="navbar">
+            <a href="#home" class="logo" id="replay-intro-btn" title="Click to open Golden Intro Animation">
+                <span class="nav-logo-circle-wrapper">
+                    <img src="assets/veera_logo.png" alt="VG Logo" class="nav-logo-circle">
+                </span>
+                <span class="gradient-text">Veera</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Journey</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta-group">
+                <a href="#contact" class="btn btn-secondary nav-btn">Let's Talk</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge-glow">
+                    <span class="pulse-dot"></span> Available for Freelance & Full-time Roles
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Veera</span><br>
+                    <span class="typing-text-container">
+                        I build <span id="typing-text" class="gradient-text-alt">Scalable Web Apps</span>
+                    </span>
+                </h1>
+                <p class="hero-description">
+                    A Full-Stack Developer & UI/UX Architect creating sleek, modern, and high-performance digital
+                    experiences. Specializing in React, Next.js, Node.js, and cloud ecosystems.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <span class="social-label">Connect:</span>
+                    <div class="social-links">
+                        <a href="https://github.com/Veera513-G" target="_blank" aria-label="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="orbit-scene">
+                    <!-- Center profile -->
+                    <div class="orbit-center">
+                        <div class="orbit-ring-glow"></div>
+                        <img src="assets/profile.png" alt="Veera Profile Portrait" class="orbit-profile-img">
+                    </div>
+
+                    <!-- Inner orbit ring with 4 icons -->
+                    <div class="orbit-ring orbit-ring-inner">
+                        <div class="orbit-icon oi-1" title="React"><i class="fa-brands fa-react"></i></div>
+                        <div class="orbit-icon oi-2" title="Node.js"><i class="fa-brands fa-node-js"></i></div>
+                        <div class="orbit-icon oi-3" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+                        <div class="orbit-icon oi-4" title="CSS3"><i class="fa-brands fa-css3-alt"></i></div>
+                    </div>
+
+                    <!-- Outer orbit ring with 4 icons -->
+                    <div class="orbit-ring orbit-ring-outer">
+                        <div class="orbit-icon oo-1" title="Python"><i class="fa-brands fa-python"></i></div>
+                        <div class="orbit-icon oo-2" title="GitHub"><i class="fa-brands fa-github"></i></div>
+                        <div class="orbit-icon oo-3" title="Docker"><i class="fa-brands fa-docker"></i></div>
+                        <div class="orbit-icon oo-4" title="AWS"><i class="fa-brands fa-aws"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down-indicator">
+            <a href="#about" aria-label="Scroll Down">
+                <span class="mouse-icon">
+                    <span class="wheel"></span>
+                </span>
+                <span class="arrow-icon">
+                    <i class="fa-solid fa-angle-down"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">01 / WHO I AM</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-ring"></div>
+                        <img src="assets/about_portrait.jpg" alt="Veerapathiran G" class="about-portrait-img">
+                    </div>
+                </div>
+                <div class="about-info">
+                    <h3>Architecting digital solutions with clean code &amp; AI.</h3>
+                    <p class="about-text">
+                        I am a passionate 3rd Year B.E. Computer Science &amp; Engineering (AIML) student at Shree
+                        Venkateshwara Hi-Tech Engineering College. I bridge the gap between design and AI engineering,
+                        creating applications that are fast, intelligent, and user-friendly. From machine learning
+                        models to interactive UI/UX interfaces, I enjoy building end-to-end digital projects.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card">
+                            <div class="stat-num gradient-text">3rd</div>
+                            <div class="stat-label">Year B.E. (AIML)</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-num gradient-text">10+</div>
+                            <div class="stat-label">Projects &amp; Hackathons</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-num gradient-text">7+</div>
+                            <div class="stat-label">Certificates &amp; Awards</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-num gradient-text">100%</div>
+                            <div class="stat-label">Dedication &amp; Passion</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">03 / SPECIALIZATION</span>
+                <h2 class="section-title">My Tech <span class="gradient-text">Skills</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="skills-tabs-container">
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                    <button class="tab-btn" data-tab="backend">Backend</button>
+                    <button class="tab-btn" data-tab="database">Database</button>
+                    <button class="tab-btn" data-tab="tools">Tools &amp; Cloud</button>
+                </div>
+
+                <div class="tab-content active" id="frontend">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-brands fa-html5 text-orange"></i> HTML5 &amp;
+                                    CSS3</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-brands fa-js text-yellow"></i> JavaScript
+                                    (ES6+)</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-brands fa-react text-cyan"></i> React &amp; React
+                                    Native</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-n text-purple"></i> Next.js
+                                    Framework</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-wind text-teal"></i> Tailwind CSS</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-brands fa-figma text-purple-figma"></i> Figma
+                                    &amp; UI/UX Design</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="backend">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-brands fa-python text-blue"></i> Python (AI/ML
+                                    &amp; Scripts)</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-brands fa-node-js text-green"></i> Node.js &amp;
+                                    Express.js</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-code text-cyan"></i> Golang
+                                    Frameworks</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-link text-magenta"></i> REST APIs &amp;
+                                    GraphQL</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-brain text-orange"></i> Machine Learning
+                                    (Scikit-Learn)</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-bolt text-yellow"></i> FastAPI &amp;
+                                    Flask</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="database">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-table text-indigo"></i> PostgreSQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-database text-blue"></i> MySQL &amp;
+                                    Relational SQL</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-leaf text-green"></i> MongoDB &amp;
+                                    NoSQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-fire text-orange"></i> Firebase &amp;
+                                    Supabase</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-brands fa-git-alt text-orange-red"></i> Git &amp;
+                                    GitHub</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-brands fa-docker text-blue-sky"></i> Docker</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-brands fa-aws text-orange-yellow"></i> Amazon Web
+                                    Services (AWS)</span>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-cloud text-blue-light"></i> Vercel &amp;
+                                    Netlify Deployment</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-terminal text-green"></i> Linux Shell
+                                    &amp; Bash</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span class="skill-name"><i class="fa-solid fa-paper-plane text-orange"></i> Postman
+                                    &amp; API Testing</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">04 / MY RECENT WORK</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="project-grid">
+                <!-- Featured Project: AI Fitness Coach -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-image-box">
+                        <img src="assets/project-fitness.png" alt="AI Fitness Coach & Pose Trainer Mockup">
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <a href="https://github.com/Veera513-G/ai-fitness-coach" target="_blank"
+                                    class="project-link" aria-label="View Code on GitHub"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/Veera513-G/ai-fitness-coach" target="_blank"
+                                    class="project-link" aria-label="Live Demo / Repository"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Full-Stack / AI / Computer Vision</span>
+                        <h3>AI Fitness Coach &amp; Pose Trainer</h3>
+                        <p>Intelligent fitness web platform featuring real-time MediaPipe computer vision pose
+                            estimation, automated rep counting, posture form evaluation (0–100%), Gemini AI workout
+                            assistant, and macro analytics.</p>
+                        <div class="project-tech">
+                            <span>React 19</span>
+                            <span>MediaPipe Pose</span>
+                            <span>Node.js</span>
+                            <span>Gemini AI</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="project-card glass-card" data-category="frontend">
+                    <div class="project-image-box">
+                        <img src="assets/project1.png" alt="CloudSphere Dashboard Mockup">
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <a href="https://github.com" target="_blank" class="project-link"
+                                    aria-label="View Code"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://example.com" target="_blank" class="project-link"
+                                    aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Frontend / SaaS</span>
+                        <h3>CloudSphere Analytics</h3>
+                        <p>A responsive server analytics dashboard featuring live traffic charts, cloud instances
+                            configuration control, and automated report generators.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>Tailwind CSS</span>
+                            <span>ChartJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-image-box">
+                        <img src="assets/project2.png" alt="ApexCart E-Commerce Mockup">
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <a href="https://github.com" target="_blank" class="project-link"
+                                    aria-label="View Code"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://example.com" target="_blank" class="project-link"
+                                    aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Full-Stack / Commerce</span>
+                        <h3>ApexCart Luxury Shop</h3>
+                        <p>E-commerce platform equipped with custom animations, user profiles, stripe billing
+                            integration, cart sessions management, and an administration dashboard.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe SDK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-image-box">
+                        <img src="assets/project3.png" alt="SynapseChat AI Mockup">
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <a href="https://github.com" target="_blank" class="project-link"
+                                    aria-label="View Code"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://example.com" target="_blank" class="project-link"
+                                    aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Full-Stack / AI</span>
+                        <h3>SynapseChat Assistant</h3>
+                        <p>Conversational assistant connected to OpenAI APIs. Provides prompt library setups, real-time
+                            message streamings, and PDF upload text extractions.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>OpenAI API</span>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-image-box">
+                        <img src="assets/project4.png" alt="CoDesign Canvas Board Mockup">
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <a href="https://github.com" target="_blank" class="project-link"
+                                    aria-label="View Code"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://example.com" target="_blank" class="project-link"
+                                    aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Full-Stack / WebSockets</span>
+                        <h3>CoDesign Workspace</h3>
+                        <p>A real-time whiteboard canvas app allowing remote teams to edit notes, draw visual
+                            flowcharts, and exchange chat messages synchronously.</p>
+                        <div class="project-tech">
+                            <span>HTML5 Canvas</span>
+                            <span>Socket.IO</span>
+                            <span>Express</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-card" data-category="frontend">
+                    <div class="project-image-box">
+                        <img src="assets/project5.png" alt="CryptoPulse App Mockup">
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <a href="https://github.com" target="_blank" class="project-link"
+                                    aria-label="View Code"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://example.com" target="_blank" class="project-link"
+                                    aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Frontend / Web3</span>
+                        <h3>CryptoPulse Analytics</h3>
+                        <p>Coin prices tracking index page connecting to external APIs. Details hourly candlestick
+                            charts, alerts filters, and trending tokens metrics.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>CSS3 Glow</span>
+                            <span>CoinGecko API</span>
+                            <span>ApexCharts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card glass-card" data-category="mobile">
+                    <div class="project-image-box">
+                        <img src="assets/project6.png" alt="FitFlow App Mockup">
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <a href="https://github.com" target="_blank" class="project-link"
+                                    aria-label="View Code"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://example.com" target="_blank" class="project-link"
+                                    aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Mobile / Health</span>
+                        <h3>FitFlow Biometrics</h3>
+                        <p>Fitness tracker companion designed with hybrid mobile structures, synchronizing steps counts,
+                            calorie logs, and water intake reminders.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Redux Toolkit</span>
+                            <span>PostgreSQL</span>
+                            <span>GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: ExamAI -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-image-box">
+                        <img src="assets/project1.png" alt="ExamAI Platform Mockup">
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <a href="https://github.com" target="_blank" class="project-link"
+                                    aria-label="View Code"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://example.com" target="_blank" class="project-link"
+                                    aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Full-Stack / AI / EdTech</span>
+                        <h3>ExamAI - TNPSC Prep Platform</h3>
+                        <p>AI-powered exam preparation platform for TNPSC government exams featuring smart quizzes,
+                            syllabus viewer, study planner, leaderboard, video lectures, and an AI chat assistant.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Gemini AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education (Timeline) -->
+    <section id="experience" class="timeline-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">05 / TIMELINE JOURNEY</span>
+                <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="timeline-grid">
+                <!-- Experience Column -->
+                <div class="timeline-column">
+                    <h3 class="column-title"><i class="fa-solid fa-briefcase gradient-text"></i> Work Experience &amp;
+                        Projects</h3>
+                    <div class="timeline-wrapper">
+                        <!-- Item 1 -->
+                        <div class="timeline-item glass-card">
+                            <span class="timeline-date">2025 - 2026 (Present)</span>
+                            <h4>AI &amp; Full-Stack Web Developer</h4>
+                            <h5 class="timeline-company">Independent Projects &amp; Innovations</h5>
+                            <p>Developing intelligent web applications, AI/ML models in Python, interactive UI/UX
+                                designs with Figma, and responsive web systems.</p>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="timeline-item glass-card">
+                            <span class="timeline-date">Feb - Aug 2026</span>
+                            <h4>Hackathon Innovator &amp; Competitor</h4>
+                            <h5 class="timeline-company">CIH'26, Sinthan'AI 2K26, UDHAYAM'26</h5>
+                            <p>Competed in national level 24-hour innovation hackathons and project expos organised by
+                                AIC RAISE, Rathinam Global University, ESEC, and KIT Coimbatore.</p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="timeline-item glass-card">
+                            <span class="timeline-date">Dec 2025</span>
+                            <h4>UI/UX Design Intern</h4>
+                            <h5 class="timeline-company">The Mind IT, Trichy</h5>
+                            <p>Completed hands-on 15-day industry internship focusing on user-centered design, Figma
+                                wireframing, interactive prototyping, and design system consistency.</p>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="timeline-item glass-card">
+                            <span class="timeline-date">Dec 2025</span>
+                            <h4>AI &amp; ML Inplant Trainee</h4>
+                            <h5 class="timeline-company">Extol Tech Solution, Erode</h5>
+                            <p>Completed intensive training in Artificial Intelligence &amp; Machine Learning
+                                algorithms, Python data handling, and real-world AI implementations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Column -->
+                <div class="timeline-column">
+                    <h3 class="column-title"><i class="fa-solid fa-graduation-cap gradient-text"></i> Education &amp;
+                        Certs</h3>
+                    <div class="timeline-wrapper">
+                        <!-- Item 1 -->
+                        <div class="timeline-item glass-card">
+                            <span class="timeline-date">2024 - 2028 (3rd Year)</span>
+                            <h4>B.E. Computer Science &amp; Engineering (AIML)</h4>
+                            <h5 class="timeline-company">Shree Venkateshwara Hi-Tech Engineering College, Gobi</h5>
+                            <p>Currently pursuing 3rd Year B.E. in CSE (Artificial Intelligence &amp; Machine Learning).
+                                Specializing in AI/ML algorithms, Python development, UI/UX design, and full-stack
+                                software development.</p>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="timeline-item glass-card">
+                            <span class="timeline-date">2026</span>
+                            <h4>National Hackathons &amp; Technical Fests</h4>
+                            <h5 class="timeline-company">AIC RAISE, ESEC, KIT Coimbatore</h5>
+                            <p>Awarded certificates of participation &amp; appreciation in CIH'26 Innovation Hackathon,
+                                Sinthan'AI 2K26 24-hr Hackathon, and UDHAYAM'26 Project Expo.</p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="timeline-item glass-card">
+                            <span class="timeline-date">2025</span>
+                            <h4>UI/UX &amp; AI Inplant Certifications</h4>
+                            <h5 class="timeline-company">The Mind IT &amp; Extol Tech Solution</h5>
+                            <p>Earned industry certifications in UI/UX Design with Figma and AI &amp; ML with Python
+                                Inplant Training.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">06 / ACHIEVEMENTS</span>
+                <h2 class="section-title">My <span class="gradient-text">Certificates</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="certificates-grid">
+                <!-- Internship at The Mind IT -->
+                <div class="certificate-card glass-card" style="text-align: left; align-items: flex-start;">
+                    <div class="cert-content" style="text-align: left; margin-bottom: 20px; width: 100%;">
+                        <span class="project-cat">Internship / UI/UX Design</span>
+                        <h3>UI/UX Design with Figma — The Mind IT, Trichy</h3>
+                        <p class="cert-issuer">15-Day Industry Internship | Dec 10 – Dec 31, 2025</p>
+                        <p style="color: var(--text-secondary); margin-top: 8px; line-height: 1.6;">Completed a hands-on
+                            internship covering user-centered design, wireframing, prototyping, color theory,
+                            typography, responsive design, and design system consistency using Figma.</p>
+                        <button id="toggle-certs-btn" class="btn primary-btn"
+                            style="margin-top: 20px; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; padding: 12px 24px; border-radius: 50px;">
+                            <i class="fa-solid fa-file-contract"></i>
+                            <span id="toggle-certs-text">View Certificates</span>
+                            <i class="fa-solid fa-chevron-down" id="toggle-certs-icon"
+                                style="transition: transform 0.3s ease; font-size: 0.85rem;"></i>
+                        </button>
+                    </div>
+                    <div id="cert-gallery" class="cert-gallery-wrapper"
+                        style="display: none; opacity: 0; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); margin-top: 20px; width: 100%;">
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+                            <div class="cert-image-card"
+                                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <img src="assets/certificates/cert_offer.png"
+                                    alt="Internship Offer Letter - The Mind IT" class="cert-modal-trigger"
+                                    style="width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.3s ease;"
+                                    onmouseover="this.style.transform='scale(1.03)'"
+                                    onmouseout="this.style.transform='scale(1)'">
+                                <p
+                                    style="text-align: center; padding: 10px; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; background: rgba(0,0,0,0.3); margin: 0;">
+                                    Offer Letter</p>
+                            </div>
+                            <div class="cert-image-card"
+                                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <img src="assets/certificates/cert_completion.png"
+                                    alt="Internship Completion Certificate - The Mind IT" class="cert-modal-trigger"
+                                    style="width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.3s ease;"
+                                    onmouseover="this.style.transform='scale(1.03)'"
+                                    onmouseout="this.style.transform='scale(1)'">
+                                <p
+                                    style="text-align: center; padding: 10px; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; background: rgba(0,0,0,0.3); margin: 0;">
+                                    Completion Certificate</p>
+                            </div>
+                            <div class="cert-image-card"
+                                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <img src="assets/certificates/cert_certificate.png"
+                                    alt="Internship Certificate - The Mind IT" class="cert-modal-trigger"
+                                    style="width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.3s ease;"
+                                    onmouseover="this.style.transform='scale(1.03)'"
+                                    onmouseout="this.style.transform='scale(1)'">
+                                <p
+                                    style="text-align: center; padding: 10px; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; background: rgba(0,0,0,0.3); margin: 0;">
+                                    Certificate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sinthan'AI 2K26 Hackathon at ESEC -->
+                <div class="certificate-card glass-card" style="text-align: left; align-items: flex-start;">
+                    <div class="cert-content" style="text-align: left; margin-bottom: 20px; width: 100%;">
+                        <span class="project-cat">Hackathon / AI &amp; Cyber Security</span>
+                        <h3>Sinthan'AI 2K26 — 24-hr Hackathon</h3>
+                        <p class="cert-issuer">Erode Sengunthar Engineering College | Mar 5 – Mar 6, 2026</p>
+                        <p style="color: var(--text-secondary); margin-top: 8px; line-height: 1.6;">Participated in the
+                            24-hour national hackathon organized by the Dept. of Artificial Intelligence &amp; Machine
+                            Learning and Cyber Security at ESEC Campus.</p>
+                        <button id="toggle-certs-btn-2" class="btn primary-btn"
+                            style="margin-top: 20px; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; padding: 12px 24px; border-radius: 50px;">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span id="toggle-certs-text-2">View Certificate</span>
+                            <i class="fa-solid fa-chevron-down" id="toggle-certs-icon-2"
+                                style="transition: transform 0.3s ease; font-size: 0.85rem;"></i>
+                        </button>
+                    </div>
+                    <div id="cert-gallery-2" class="cert-gallery-wrapper"
+                        style="display: none; opacity: 0; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); margin-top: 20px; width: 100%;">
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+                            <div class="cert-image-card"
+                                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <img src="assets/certificates/cert_sinthan_ai.png"
+                                    alt="Sinthan'AI 2K26 Hackathon Certificate - ESEC" class="cert-modal-trigger"
+                                    style="width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.3s ease;"
+                                    onmouseover="this.style.transform='scale(1.03)'"
+                                    onmouseout="this.style.transform='scale(1)'">
+                                <p
+                                    style="text-align: center; padding: 10px; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; background: rgba(0,0,0,0.3); margin: 0;">
+                                    Participation Certificate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd Position: CIH'26 Innovation Hackathon (AIC RAISE & Rathinam University) -->
+                <div class="certificate-card glass-card" style="text-align: left; align-items: flex-start;">
+                    <div class="cert-content" style="text-align: left; margin-bottom: 20px; width: 100%;">
+                        <span class="project-cat">Innovation Hackathon / 24-Hour Challenge</span>
+                        <h3>CIH'26 — Coimbatore Innovation Hackathon</h3>
+                        <p class="cert-issuer">AIC RAISE &amp; Rathinam Global University | Aug 4 – Aug 5, 2026</p>
+                        <p style="color: var(--text-secondary); margin-top: 8px; line-height: 1.6;">Successfully
+                            participated in CIH'26 — Coimbatore Innovation Hackathon 2026, a 24-Hour Innovation
+                            Challenge organised by AIC RAISE in association with Rathinam Global Deemed to be
+                            University.</p>
+                        <button id="toggle-certs-btn-7" class="btn primary-btn"
+                            style="margin-top: 20px; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; padding: 12px 24px; border-radius: 50px;">
+                            <i class="fa-solid fa-rocket"></i>
+                            <span id="toggle-certs-text-7">View Certificate</span>
+                            <i class="fa-solid fa-chevron-down" id="toggle-certs-icon-7"
+                                style="transition: transform 0.3s ease; font-size: 0.85rem;"></i>
+                        </button>
+                    </div>
+                    <div id="cert-gallery-7" class="cert-gallery-wrapper"
+                        style="display: none; opacity: 0; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); margin-top: 20px; width: 100%;">
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+                            <div class="cert-image-card"
+                                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <img src="assets/certificates/cert_cih26_hackathon.png"
+                                    alt="CIH'26 Coimbatore Innovation Hackathon Certificate" class="cert-modal-trigger"
+                                    style="width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.3s ease;"
+                                    onmouseover="this.style.transform='scale(1.03)'"
+                                    onmouseout="this.style.transform='scale(1)'">
+                                <p
+                                    style="text-align: center; padding: 10px; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; background: rgba(0,0,0,0.3); margin: 0;">
+                                    Participation Certificate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4th Position: HACKVERSE X — Global Tech Innovation 2026 -->
+                <div class="certificate-card glass-card" style="text-align: left; align-items: flex-start;">
+                    <div class="cert-content" style="text-align: left; margin-bottom: 20px; width: 100%;">
+                        <span class="project-cat">Global Hackathon / International Innovation</span>
+                        <h3>HACKVERSE X — Global Tech Innovation 2026</h3>
+                        <p class="cert-issuer">Hackverse X | International Tech Innovation Challenge 2026</p>
+                        <p style="color: var(--text-secondary); margin-top: 8px; line-height: 1.6;">Successfully
+                            participated in HACKVERSE X — Global Tech Innovation 2026, demonstrating creativity,
+                            problem-solving, and technical excellence during this international innovation challenge.
+                        </p>
+                        <button id="toggle-certs-btn-8" class="btn primary-btn"
+                            style="margin-top: 20px; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; padding: 12px 24px; border-radius: 50px;">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="toggle-certs-text-8">View Certificate</span>
+                            <i class="fa-solid fa-chevron-down" id="toggle-certs-icon-8"
+                                style="transition: transform 0.3s ease; font-size: 0.85rem;"></i>
+                        </button>
+                    </div>
+                    <div id="cert-gallery-8" class="cert-gallery-wrapper"
+                        style="display: none; opacity: 0; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); margin-top: 20px; width: 100%;">
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+                            <div class="cert-image-card"
+                                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <img src="assets/certificates/cert_hackverse_x.png"
+                                    alt="HACKVERSE X Global Tech Innovation 2026 Certificate" class="cert-modal-trigger"
+                                    style="width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.3s ease;"
+                                    onmouseover="this.style.transform='scale(1.03)'"
+                                    onmouseout="this.style.transform='scale(1)'">
+                                <p
+                                    style="text-align: center; padding: 10px; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; background: rgba(0,0,0,0.3); margin: 0;">
+                                    Participation Certificate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & ML with Python at Extol Tech Solution -->
+                <div class="certificate-card glass-card" style="text-align: left; align-items: flex-start;">
+                    <div class="cert-content" style="text-align: left; margin-bottom: 20px; width: 100%;">
+                        <span class="project-cat">Inplant Training / Artificial Intelligence</span>
+                        <h3>AI &amp; ML with Python — Extol Tech Solution, Erode</h3>
+                        <p class="cert-issuer">Extol Tech Solution | Dec 15 – Dec 30, 2025</p>
+                        <p style="color: var(--text-secondary); margin-top: 8px; line-height: 1.6;">Completed intensive
+                            Inplant Training in AI &amp; Machine Learning with Python covering core ML concepts,
+                            algorithms, and practical implementations. (Cert ID: A0042297)</p>
+                        <button id="toggle-certs-btn-3" class="btn primary-btn"
+                            style="margin-top: 20px; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; padding: 12px 24px; border-radius: 50px;">
+                            <i class="fa-solid fa-award"></i>
+                            <span id="toggle-certs-text-3">View Certificate</span>
+                            <i class="fa-solid fa-chevron-down" id="toggle-certs-icon-3"
+                                style="transition: transform 0.3s ease; font-size: 0.85rem;"></i>
+                        </button>
+                    </div>
+                    <div id="cert-gallery-3" class="cert-gallery-wrapper"
+                        style="display: none; opacity: 0; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); margin-top: 20px; width: 100%;">
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+                            <div class="cert-image-card"
+                                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <img src="assets/certificates/cert_ai_ml_python.jpg"
+                                    alt="AI & ML with Python Inplant Training Certificate - Extol Tech Solution"
+                                    class="cert-modal-trigger"
+                                    style="width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.3s ease;"
+                                    onmouseover="this.style.transform='scale(1.03)'"
+                                    onmouseout="this.style.transform='scale(1)'">
+                                <p
+                                    style="text-align: center; padding: 10px; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; background: rgba(0,0,0,0.3); margin: 0;">
+                                    Certificate of Appreciation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RGF Fest 2025 - Rathinam Group of Institutions (AI Tools Workshop & World Record Attempt) -->
+                <div class="certificate-card glass-card" style="text-align: left; align-items: flex-start;">
+                    <div class="cert-content" style="text-align: left; margin-bottom: 20px; width: 100%;">
+                        <span class="project-cat">Techno-Cultural Fest / AI Workshop &amp; World Record</span>
+                        <h3>RGF Fest 2025 — Rathinam Group of Institutions</h3>
+                        <p class="cert-issuer">Rathinam Group of Institutions, Coimbatore | Mar 25 – Mar 29, 2025</p>
+                        <p style="color: var(--text-secondary); margin-top: 8px; line-height: 1.6;">Participated in
+                            India's Mega Techno-Cultural Fest RGF Fest, successfully completing the AI Tools Workshop
+                            and participating in the New World Record Attempt (Over 13,000+ Participants).</p>
+                        <button id="toggle-certs-btn-4" class="btn primary-btn"
+                            style="margin-top: 20px; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; padding: 12px 24px; border-radius: 50px;">
+                            <i class="fa-solid fa-star"></i>
+                            <span id="toggle-certs-text-4">View Certificates</span>
+                            <i class="fa-solid fa-chevron-down" id="toggle-certs-icon-4"
+                                style="transition: transform 0.3s ease; font-size: 0.85rem;"></i>
+                        </button>
+                    </div>
+                    <div id="cert-gallery-4" class="cert-gallery-wrapper"
+                        style="display: none; opacity: 0; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); margin-top: 20px; width: 100%;">
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+                            <div class="cert-image-card"
+                                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <img src="assets/certificates/cert_rgf_ai_tools.jpg"
+                                    alt="AI Tools Workshop Completion Certificate - Rathinam Grand Fest"
+                                    class="cert-modal-trigger"
+                                    style="width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.3s ease;"
+                                    onmouseover="this.style.transform='scale(1.03)'"
+                                    onmouseout="this.style.transform='scale(1)'">
+                                <p
+                                    style="text-align: center; padding: 10px; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; background: rgba(0,0,0,0.3); margin: 0;">
+                                    AI Tools Workshop Certificate</p>
+                            </div>
+                            <div class="cert-image-card"
+                                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <img src="assets/certificates/cert_rgf_world_record.jpg"
+                                    alt="World Record Attempt Certificate - Rathinam Grand Fest"
+                                    class="cert-modal-trigger"
+                                    style="width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.3s ease;"
+                                    onmouseover="this.style.transform='scale(1.03)'"
+                                    onmouseout="this.style.transform='scale(1)'">
+                                <p
+                                    style="text-align: center; padding: 10px; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; background: rgba(0,0,0,0.3); margin: 0;">
+                                    World Record Attempt Certificate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Golang Framework Workshop at Kongu Engineering College -->
+                <div class="certificate-card glass-card" style="text-align: left; align-items: flex-start;">
+                    <div class="cert-content" style="text-align: left; margin-bottom: 20px; width: 100%;">
+                        <span class="project-cat">Workshop / Backend Development</span>
+                        <h3>Golang Framework Workshop — Kongu Engineering College</h3>
+                        <p class="cert-issuer">Kongu Engineering College | Mar 13, 2025</p>
+                        <p style="color: var(--text-secondary); margin-top: 8px; line-height: 1.6;">Participated in the
+                            Golang Framework Workshop conducted during AI Conclave 1.0 by the Dept. of Artificial
+                            Intelligence in association with Innovation &amp; Entrepreneurship Forum (IEF).</p>
+                        <button id="toggle-certs-btn-5" class="btn primary-btn"
+                            style="margin-top: 20px; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; padding: 12px 24px; border-radius: 50px;">
+                            <i class="fa-solid fa-code"></i>
+                            <span id="toggle-certs-text-5">View Certificate</span>
+                            <i class="fa-solid fa-chevron-down" id="toggle-certs-icon-5"
+                                style="transition: transform 0.3s ease; font-size: 0.85rem;"></i>
+                        </button>
+                    </div>
+                    <div id="cert-gallery-5" class="cert-gallery-wrapper"
+                        style="display: none; opacity: 0; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); margin-top: 20px; width: 100%;">
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+                            <div class="cert-image-card"
+                                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <img src="assets/certificates/cert_golang_workshop.png"
+                                    alt="Golang Framework Workshop Certificate - Kongu Engineering College"
+                                    class="cert-modal-trigger"
+                                    style="width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.3s ease;"
+                                    onmouseover="this.style.transform='scale(1.03)'"
+                                    onmouseout="this.style.transform='scale(1)'">
+                                <p
+                                    style="text-align: center; padding: 10px; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; background: rgba(0,0,0,0.3); margin: 0;">
+                                    Workshop Participation Certificate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Expo at UDHAYAM'26 (KIT Coimbatore) -->
+                <div class="certificate-card glass-card" style="text-align: left; align-items: flex-start;">
+                    <div class="cert-content" style="text-align: left; margin-bottom: 20px; width: 100%;">
+                        <span class="project-cat">Intercollegiate Tech Fest / Project Expo</span>
+                        <h3>Project Expo — UDHAYAM'26 (KIT Coimbatore)</h3>
+                        <p class="cert-issuer">Kalaignarkarunanidhi Institute of Technology | Feb 27 – Feb 28, 2026</p>
+                        <p style="color: var(--text-secondary); margin-top: 8px; line-height: 1.6;">Participated in the
+                            Project Expo event at UDHAYAM'26 — An Intercollegiate Technical and Cultural Fest held at
+                            KIT Coimbatore.</p>
+                        <button id="toggle-certs-btn-6" class="btn primary-btn"
+                            style="margin-top: 20px; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; padding: 12px 24px; border-radius: 50px;">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span id="toggle-certs-text-6">View Certificate</span>
+                            <i class="fa-solid fa-chevron-down" id="toggle-certs-icon-6"
+                                style="transition: transform 0.3s ease; font-size: 0.85rem;"></i>
+                        </button>
+                    </div>
+                    <div id="cert-gallery-6" class="cert-gallery-wrapper"
+                        style="display: none; opacity: 0; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); margin-top: 20px; width: 100%;">
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+                            <div class="cert-image-card"
+                                style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <img src="assets/certificates/cert_kit_udhayam.jpg"
+                                    alt="Project Expo Certificate - UDHAYAM'26 KIT Coimbatore"
+                                    class="cert-modal-trigger"
+                                    style="width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.3s ease;"
+                                    onmouseover="this.style.transform='scale(1.03)'"
+                                    onmouseout="this.style.transform='scale(1)'">
+                                <p
+                                    style="text-align: center; padding: 10px; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; background: rgba(0,0,0,0.3); margin: 0;">
+                                    Certificate of Appreciation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">07 / GET IN TOUCH</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info cards -->
+                <div class="contact-info-column">
+                    <h3>Let's build something epic together.</h3>
+                    <p>Have an exciting project layout in mind or want to talk tech? Drop a message here, or contact me
+                        through any channel. I usually reply within 24 hours.</p>
+
+                    <div class="info-links-list">
+                        <div class="info-link-item glass-card">
+                            <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="text-box">
+                                <span>Write to me</span>
+                                <a href="mailto:gveera513@gmail.com">gveera513@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-link-item glass-card">
+                            <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                            <div class="text-box">
+                                <span>Call me</span>
+                                <a href="tel:6382054011">6382054011</a>
+                            </div>
+                        </div>
+                        <div class="info-link-item glass-card">
+                            <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="text-box">
+                                <span>Base location</span>
+                                <p>Gobi, Erode Dt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form card -->
+                <div class="contact-form-column glass-card">
+                    <form id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="name" required placeholder="Name">
+                                    <span class="focus-line"></span>
+                                </div>
+                                <span class="error-msg">Name is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" required placeholder="Email">
+                                    <span class="focus-line"></span>
+                                </div>
+                                <span class="error-msg">Please enter a valid email</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="subject" required placeholder="Project Collaboration">
+                                <span class="focus-line"></span>
+                            </div>
+                            <span class="error-msg">Subject is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <div class="input-wrapper">
+                                <textarea id="message" required rows="5"
+                                    placeholder="Tell me about your project..."></textarea>
+                                <span class="focus-line"></span>
+                            </div>
+                            <span class="error-msg">Message cannot be empty</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <!-- Success screen overlay -->
+                    <div class="success-overlay">
+                        <div class="success-message">
+                            <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <h3>Message Sent!</h3>
+                            <p>Thank you for reaching out, John. I have received your message and will get back to you
+                                shortly.</p>
+                            <button class="btn btn-secondary success-close-btn">Send Another Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-top">
+                <a href="#home" class="logo">
+                    <span class="gradient-text">Veera</span>
+                </a>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Veera. All rights reserved. Created with love &amp; code.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/Veera513-G" target="_blank" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top-btn" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Image Lightbox Modal -->
+    <div id="cert-lightbox"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(7, 9, 14, 0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); z-index: 10000; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.35s ease; padding: 24px;">
+        <button id="cert-lightbox-close"
+            style="position: absolute; top: 24px; right: 28px; width: 44px; height: 44px; border-radius: 50%; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #fff; font-size: 1.4rem; cursor: pointer; z-index: 10001; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.5);"
+            onmouseover="this.style.background='var(--gradient-primary)'; this.style.color='#07090e'; this.style.transform='scale(1.1)'"
+            onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'; this.style.color='#fff'; this.style.transform='scale(1)'">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="cert-lightbox-img" src="" alt="Certificate Preview"
+            style="max-width: 92%; max-height: 88vh; object-fit: contain; border-radius: 16px; box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 242, 254, 0.2); border: 1px solid rgba(255, 255, 255, 0.15); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+    </div>
+
+    <!-- GSAP for Smooth Initial Anim -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Custom JS script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
